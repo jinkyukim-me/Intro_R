@@ -22,3 +22,5 @@ one, select the most interesting parts of it, and order them.
 
 #### 7. [Graphics]
 Discover R’s packages to do graphics and create your own data visualizations
+
+#### 8. [Final Exam Score]
