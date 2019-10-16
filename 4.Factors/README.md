@@ -1,6 +1,6 @@
-# 3. Factors
+# 4. Factors
 
-## 3.1 Factors
+## 4.1 Factors
 
 Categorical Variables
 * Limited number of different values
