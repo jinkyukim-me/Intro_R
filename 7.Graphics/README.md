@@ -34,7 +34,7 @@
 
         > plot(countries$continent)
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/categorical.JPG" width="80%"></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/categorical.JPG" width="60%"></p>
 
 ### plot() (numerical)
 
