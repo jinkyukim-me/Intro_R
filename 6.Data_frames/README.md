@@ -101,132 +101,136 @@ Not very practical
 
 ## 6.2 Subset - Extend - Sort Data Frames
 
-Subset Data Frame
-● Subsetting syntax from matrices and lists
-● [ from matrices
-● [[ and $ from lists
+### Subset Data Frame
+
+* Subsetting syntax from matrices and lists
+* [ from matrices
+* [[ and $ from lists
 
 
-people
-> name <- c("Anne", "Pete", "Frank", "Julia", "Cath")
-> age <- c(28, 30, 21, 39, 35)
-> child <- c(FALSE, TRUE, TRUE, FALSE, TRUE)
-> people <- data.frame(name, age, child,
- stringsAsFactors = FALSE)
-> people
- name age child
-1 Anne 28 FALSE
-2 Pete 30 TRUE
-3 Frank 21 TRUE
-4 Julia 39 FALSE
-5 Cath 35 TRUE
+### people
+
+	> name <- c("Anne", "Pete", "Frank", "Julia", "Cath")
+	> age <- c(28, 30, 21, 39, 35)
+	> child <- c(FALSE, TRUE, TRUE, FALSE, TRUE)
+	> people <- data.frame(name, age, child,
+	 stringsAsFactors = FALSE)
+
+	> people
+	 name age child
+	1 Anne 28 FALSE
+	2 Pete 30 TRUE
+	3 Frank 21 TRUE
+	4 Julia 39 FALSE
+	5 Cath 35 TRUE
 
 
-Subset Data Frame
+### Subset Data Frame
 
-> people
- name age child
-1 Anne 28 FALSE
-2 Pete 30 TRUE
-3 Frank 21 TRUE
-4 Julia 39 FALSE
-5 Cath 35 TRUE
+	> people
+	 name age child
+	1 Anne 28 FALSE
+	2 Pete 30 TRUE
+	3 Frank 21 TRUE
+	4 Julia 39 FALSE
+	5 Cath 35 TRUE
 
-> people[3,2]
-[1] 21
-> people[3,"age"]
-[1] 21
-> people[3,]
- name age child
-3 Frank 21 TRUE
-> people[,"age"]
-[1] 28 30 21 39 35
-
-
-Subset Data Frame 
-
-> people
- name age child
-1 Anne 28 FALSE
-2 Pete 30 TRUE
-3 Frank 21 TRUE
-4 Julia 39 FALSE
-5 Cath 35 TRUE
-
-> people[c(3, 5), c("age", "child")]
- age child
-3 21 TRUE
-5 35 TRUE
-> people[2]
- age
-1 28
-2 30
-3 21
-4 39
-5 35
+	> people[3,2]
+	[1] 21
+	> people[3,"age"]
+	[1] 21
+	> people[3,]
+	 name age child
+	3 Frank 21 TRUE
+	> people[,"age"]
+	[1] 28 30 21 39 35
 
 
-Data Frame ~ List
+### Subset Data Frame 
 
-> people
- name age child
-1 Anne 28 FALSE
-2 Pete 30 TRUE
-3 Frank 21 TRUE
-4 Julia 39 FALSE
-5 Cath 35 TRUE
+	> people
+	 name age child
+	1 Anne 28 FALSE
+	2 Pete 30 TRUE
+	3 Frank 21 TRUE
+	4 Julia 39 FALSE
+	5 Cath 35 TRUE
 
-> people$age
-[1] 28 30 21 39 35
-> people[["age"]]
-[1] 28 30 21 39 35
-> people[[2]]
-[1] 28 30 21 39 35
-
-
-Data Frame ~ List 
-
-> people
- name age child
-1 Anne 28 FALSE
-2 Pete 30 TRUE
-3 Frank 21 TRUE
-4 Julia 39 FALSE
-5 Cath 35 TRUE
+	> people[c(3, 5), c("age", "child")]
+	 age child
+	3 21 TRUE
+	5 35 TRUE
+	> people[2]
+	 age
+	1 28
+	2 30
+	3 21
+	4 39
+	5 35
 
 
-> people["age"]
- age
-1 28
-2 30
-3 21
-4 39
-5 35
-> people[2]
- age
-1 28
-2 30
-3 21
-4 39
-5 35
+### Data Frame ~ List
+
+	> people
+	 name age child
+	1 Anne 28 FALSE
+	2 Pete 30 TRUE
+	3 Frank 21 TRUE
+	4 Julia 39 FALSE
+	5 Cath 35 TRUE
+
+	> people$age
+	[1] 28 30 21 39 35
+	> people[["age"]]
+	[1] 28 30 21 39 35
+	> people[[2]]
+	[1] 28 30 21 39 35
 
 
-Extend Data Frame
+### Data Frame ~ List 
+
+	> people
+	 name age child
+	1 Anne 28 FALSE
+	2 Pete 30 TRUE
+	3 Frank 21 TRUE
+	4 Julia 39 FALSE
+	5 Cath 35 TRUE
+
+
+	> people["age"]
+	 age
+	1 28
+	2 30
+	3 21
+	4 39
+	5 35
+	> people[2]
+	 age
+	1 28
+	2 30
+	3 21
+	4 39
+	5 35
+
+
+### Extend Data Frame
+
 * Add columns = add variables
 * Add rows = add observations
 
 
 
-Add column
+### Add column
 
 
-> height <- c(163, 177, 163, 162, 157)
-> people$height <- height
-> people[["height"]] <- height
-> people
- name age child height
-1 Anne 28 FALSE 163
-2 Pete 30 TRUE 177
-3 Frank 21 TRUE 163
-4 Julia 39 FALSE 162
-5 Cath 35 TRUE 157
+	> height <- c(163, 177, 163, 162, 157)
+	> people$height <- height
+	> people[["height"]] <- height
+	> people
+	 name age child height
+	1 Anne 28 FALSE 163
+	2 Pete 30 TRUE 177
+	3 Frank 21 TRUE 163
+	4 Julia 39 FALSE 162
+	5 Cath 35 TRUE 157
