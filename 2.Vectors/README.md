@@ -93,3 +93,57 @@
         > class(drawn_ranks)
         [1] "character"
  
+
+## 2.2 Vector Arithmetic
+
+### Vector Arithmetic
+
+                Computations are performed element-wise
+                > my_apples <- 5
+                > my_oranges <- 6
+                > my_apples + my_oranges
+                [1] 11
+                my_apples is a vector!
+                my_oranges is a vector!
+                > earnings <- c(50, 100, 30)
+                > earnings * 3
+                [1] 150 300 90
+
+### Vector Arithmetic
+
+                > earnings/10
+                [1] 5 10 3
+                > earnings - 20
+                [1] 30 80 10
+                > earnings + 100
+                [1] 150 200 130
+                > earnings^2
+                [1] 2500 10000 900
+                Mathematics naturally extend!
+
+
+### Element-wise
+
+                > earnings <- c(50, 100, 30)
+                > expenses <- c(30, 40, 80)
+                > earnings - expenses
+                [1] 20 60 -50
+                > earnings + c(10, 20, 30)
+                [1] 60 120 60
+                > earnings * c(1, 2, 3)
+                [1] 50 200 90
+                > earnings / c(1, 2, 3)
+                [1] 50 50 10
+
+
+### sum() and >
+
+                > earnings <- c(50, 100, 30)
+                > expenses <- c(30, 40, 80)
+                > bank <- earnings - expenses
+                > bank
+                [1] 20 60 -50
+                > sum(bank)
+                [1] 30
+                > earnings > expenses
+                [1] TRUE TRUE FALSE
