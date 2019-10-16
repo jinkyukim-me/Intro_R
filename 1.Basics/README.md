@@ -123,3 +123,93 @@
         [1] "height" "width"
         > area
         Error: object 'area' not found
+
+
+## 1.2 Basic Data Types
+
+        logical
+        > TRUE
+        [1] TRUE
+        > class(TRUE)
+        [1] "logical"
+
+        > FALSE
+        [1] FALSE
+
+        > class(NA)
+        [1] "logical"
+
+        > T
+        [1] TRUE
+        > F
+        [1] FALSE
+
+
+### numeric
+
+        > 2
+        [1] 2
+
+        > 2.5
+        [1] 2.5
+
+        > 2L
+        [1] 2
+
+        > class(2)
+        [1] "numeric"
+
+        > class(2L)
+        [1] "integer"
+
+
+### numeric
+
+
+        > is.numeric(2)
+        [1] TRUE
+
+        > is.numeric(2L)
+        [1] TRUE
+
+        > is.integer(2)
+        [1] FALSE
+
+        > is.integer(2L)
+        [1] TRUE
+
+
+### character
+
+        > "I love data science!"
+        [1] "I love data science!"
+
+        > class("I love data science!")
+        [1] "character"
+
+
+
+### Other atomic types
+
+* double: higher precision
+* complex: complex numbers
+* raw: store raw bytes
+
+
+
+### Coercion
+
+        > as.numeric(TRUE)
+        [1] 1
+        > as.numeric(FALSE)
+        [1] 0
+        > as.character(4)
+        [1] "4"
+        > as.numeric("4.5")
+        [1] 4.5
+        > as.integer("4.5")
+        [1] 4
+        > as.numeric("Hello")
+        [1] NA
+        Warning message:
+        NAs introduced by coercion 
