@@ -5,4 +5,4 @@ Study for Introduction to R for Data Science
 #### 3. [Matrices](https://github.com/jinkyukim-me/Intro_R/tree/master/3.Matrices)	
 #### 4. [Factors](https://github.com/jinkyukim-me/Intro_R/blob/master/4.Factors/README.md)	
 #### 5. [Lists](https://github.com/jinkyukim-me/Intro_R/blob/master/5.Lists/README.md)	
-#### 6. Data_frames
+#### 6. [Data_frames](https://github.com/jinkyukim-me/Intro_R/tree/master/6.Data_frames)
