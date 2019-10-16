@@ -31,23 +31,46 @@
  
  
 ### plot() (categorical)
-> plot(countries$continent)
 
+        > plot(countries$continent)
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/categorical.JPG" width="100%"></p>
 
 ### plot() (numerical)
-> plot(countries$population)
+
+        > plot(countries$population)
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/numerical.JPG" width="100%"></p>
+
 
 ### plot() (2x numerical)
-> plot(countries$area, countries$population)
+
+        > plot(countries$area, countries$population)
+        
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical.JPG" width="100%"></p>
+
+
+### plot() (2x numerical)
+
+        > plot(log(countries$area), log(countries$population))
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical2.JPG" width="100%"></p>
+
 
 ### plot() (2x categorical)
-> plot(countries$continent, countries$religion)
 
+        > plot(countries$continent, countries$religion)
+        
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical.JPG"></p>
 
 
 ### plot() (2x categorical)
-> plot(countries$religion, countries$continent)
 
+        > plot(countries$religion, countries$continent)
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical2.JPG"></p>
 
 
 ### hist()
@@ -58,17 +81,24 @@
 
 
 ### hist()
-> africa_obs <- countries$continent == "Africa"
-> africa <- countries[africa_obs, ]
+
+        > africa_obs <- countries$continent == "Africa"
+        > africa <- countries[africa_obs, ]
+
+
 
 
 ### hist()
-> hist(africa$population)
 
+        > hist(africa$population)
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist1.JPG"></p>
 
 ### hist()
-> hist(africa$population, breaks = 10)
 
+        > hist(africa$population, breaks = 10)
+
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist2.JPG"></p>
 
 ### Other graphics functions
 * barplot()
