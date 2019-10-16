@@ -1,5 +1,6 @@
-# R: The true basics
-## What is R?
+# 1. Basics
+## R: The true basics
+### What is R?
 * Language for Statistical Computing
 * Ihaka & Gentleman
 * Auckland, New Zealand
@@ -8,7 +9,7 @@
 * Visualization Capabilities
 * Highly extensible
 
-## Advantages
+### Advantages
 * Open source! free!
 * Master at graphics
 * Command-line interface
@@ -16,14 +17,14 @@
 * R packages: extensions of R
 * Vibrant community
 
-## Disadvantages
+### Disadvantages
 * Easy to learn, hard to master
 * Command-line interface daunting at first
 * Poorly written code hard to read/maintain
 * Poorly written code is slow
 
 
-## Console
+### Console
 
         > 1 + 2
         [1] 3
@@ -44,7 +45,7 @@
       > width
       [1] 4
 
-## Workspace
+### Workspace
 
         > ls()
         [1] "height" "width"
@@ -59,7 +60,7 @@
         [1] "area" "height" "width" 
 
 
-## R script
+### R script
 
 * Text file with R commands
 * Automate your work
@@ -70,7 +71,7 @@
       area
       
       
-## R script
+### R script
 
         height <- 2
         width <- 4
@@ -84,7 +85,7 @@
         [1] 8
         
         
-## R script
+### R script
 
         height <- 3
         width <- 6
@@ -98,7 +99,7 @@
         [1] 18
 
 
-## Comments
+### Comments
 
         # Create variables height and width
         height <- 3
@@ -113,7 +114,7 @@
         # x <- 3 not executed!
 
 
-## Workspace (2)
+### Workspace (2)
 
         > ls()
         [1] "area" "height" "width"
