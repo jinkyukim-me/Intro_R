@@ -1,5 +1,5 @@
 # 1. Basics
-## R: The true basics
+## 1.1 R: The true basics
 ### What is R?
 * Language for Statistical Computing
 * Ihaka & Gentleman
