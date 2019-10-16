@@ -147,3 +147,87 @@
         [1] 30
         > earnings > expenses
         [1] TRUE TRUE FALSE
+
+
+## 2.3 Subsetting Vectors
+
+### Subset by index
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain[1] [1] -> take element at index 1
+        result is a (named) vector too! spades
+         11
+        > remain[3]
+        diamonds
+         11
+
+ 
+### Subset by name
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain["spades"]
+        spades
+         11
+        > remain["diamonds"]
+        diamonds
+         11
+ 
+ 
+### Subset multiple elements
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain_black <- remain[c(1, 4)]
+        > remain_black
+        spades clubs
+         11 13
+        > remain[c(4, 1)]
+         clubs spades
+         13 11
+        > remain[c("clubs", "spades")]
+         clubs spades
+         13 11
+
+ 
+### Subset all but some
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain[-c(1, 2)]
+        diamonds clubs
+         11 13
+        > remain[-"spades"]
+        Error in -"spades" : invalid argument to unary operator
+
+
+### Subset using logical vector
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain[c(FALSE, TRUE, FALSE, TRUE)]
+        hearts clubs
+         12 13
+        > selection_vector <- c(FALSE, TRUE, FALSE, TRUE)
+        > remain[selection_vector]
+        hearts clubs
+         12 13 
+ 
+ 
+### Subset using logical vector
+
+        > remain <- c(spades = 11, hearts = 12,
+         diamonds = 11, clubs = 13)
+        > remain[c(TRUE, FALSE)]
+         spades diamonds
+         11 11
+        > remain[c(TRUE, FALSE, TRUE, FALSE)]
+         spades diamonds
+         11 11
+        > remain[c(TRUE, FALSE, TRUE)]
+         spades diamonds clubs
+         11 11 13
+        > remain[c(TRUE, FALSE, TRUE, TRUE)]
+         spades diamonds clubs
+         11 11 13 
