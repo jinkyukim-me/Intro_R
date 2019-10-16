@@ -40,7 +40,7 @@
 
         > plot(countries$population)
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/numerical.JPG" width="80%"></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/numerical.JPG" width="60%"></p>
 
 
 ### plot() (2x numerical)
@@ -48,14 +48,14 @@
         > plot(countries$area, countries$population)
         
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical.JPG" width="80%"></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical.JPG" width="60%"></p>
 
 
 ### plot() (2x numerical)
 
         > plot(log(countries$area), log(countries$population))
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical2.JPG" width="80%"></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20numerical2.JPG" width="60%"></p>
 
 
 ### plot() (2x categorical)
@@ -63,14 +63,14 @@
         > plot(countries$continent, countries$religion)
         
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical.JPG" width="80%></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical.JPG" width="60%></p>
 
 
 ### plot() (2x categorical)
 
         > plot(countries$religion, countries$continent)
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical2.JPG" width="80%></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/2x%20categorical2.JPG" width="60%></p>
 
 
 ### hist()
@@ -92,13 +92,13 @@
 
         > hist(africa$population)
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist1.JPG" width="80%></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist1.JPG" width="60%></p>
 
 ### hist()
 
         > hist(africa$population, breaks = 10)
 
-<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist2.JPG" width="80%></p>
+<p><img src="https://github.com/jinkyukim-me/Intro_R/blob/master/img/hist2.JPG" width="60%></p>
 
 ### Other graphics functions
 * barplot()
