@@ -223,3 +223,128 @@ Contain different types? list or data.frame
            c(FALSE, TRUE, FALSE, TRUE)]
           b d
           1 2
+
+
+## 3.3 Matrix Arithmetic
+
+### Matrix Arithmetic
+* colSums(), rowSums()
+* Standard arithmetic possible
+* Element-wise computation
+
+### lotr_matrix
+
+          > the_fellowship <- c(316, 556)
+          > two_towers <- c(343, 584)
+          > return_king <- c(378, 742)
+          > lotr_matrix <- rbind(the_fellowship, two_towers, return_king)
+          > colnames(lotr_matrix) <- c("US", "non-US")
+          > rownames(lotr_matrix) <- c("Fellowship", "Two Towers",
+           "Return King")
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+
+
+### Matrix - Scalar 
+
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+
+          > lotr_matrix / 1.12
+           US non-US
+          Fellowship 282.1429 496.4286
+          Two Towers 306.2500 521.4286
+          Return King 337.5000 662.5000
+
+          > lotr_matrix - 50
+           US non-US
+          Fellowship 266 506
+          Two Towers 293 534
+          Return King 328 692
+
+
+
+### Matrix - Matrix 
+
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+
+          > # Definition of theater_cut omitted
+          > theater_cut
+           [,1] [,2]
+          [1,] 50 50
+          [2,] 80 80
+          [3,] 100 100
+
+          > lotr_matrix - theater_cut
+           US non-US
+          Fellowship 266 506
+          Two Towers 263 504
+          Return King 278 642
+
+
+
+### Recycling 
+
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+
+          > lotr_matrix - c(50, 80, 100)
+           US non-US
+          Fellowship 266 506
+          Two Towers 263 504
+          Return King 278 642
+
+          > matrix(c(50, 80, 100), nrow = 3, ncol = 2)
+           [,1] [,2]
+          [1,] 50 50
+          [2,] 80 80
+          [3,] 100 100
+
+
+### Matrix Multiplication 
+
+          > lotr_matrix
+           US non-US
+          Fellowship 316 556
+          Two Towers 343 584
+          Return King 378 742
+          
+          > # Definition of rates omitted
+          > rates
+           [,1] [,2]
+          [1,] 1.11 1.11
+          [2,] 0.99 0.99
+          [3,] 0.82 0.82
+
+          > lotr_matrix * rates
+           US non-US
+          Fellowship 350.76 617.16
+          Two Towers 339.57 578.16
+          Return King 309.96 608.44
+
+
+
+### Matrices and Vectors
+* Very similar
+* Vector = 1D, matrix = 2D
+* Coercion if necessary
+* Recycling if necessary
+* Element-wise calculations
