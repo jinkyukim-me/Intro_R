@@ -15,8 +15,8 @@
 * Observations
 * Variables
 * Example: people
-* each person = observation
-* properties (name, age …) = variables
+	* each person = observation
+	* properties (name, age …) = variables
 * Matrix?
 * List?
 Need different types
