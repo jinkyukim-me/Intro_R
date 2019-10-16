@@ -23,4 +23,4 @@ one, select the most interesting parts of it, and order them.
 #### 7. [Graphics](https://github.com/jinkyukim-me/Intro_R/tree/master/7.Graphics)
 Discover R’s packages to do graphics and create your own data visualizations
 
-#### 8. [Final Exam Score]
+#### 8. [Final Exam Score](https://github.com/jinkyukim-me/Intro_R/tree/master/8.%20My%20Score)
