@@ -80,9 +80,9 @@
 
 ### Vectors are homogeneous
 
-● Only elements of the same type
-● Atomic vectors <> lists
-● Automatic coercion if necessary
+* Only elements of the same type
+* Atomic vectors <> lists
+* Automatic coercion if necessary
 
 
 ### Coercion for vectors
