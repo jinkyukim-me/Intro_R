@@ -20,7 +20,7 @@ Lists allow you to store components of different types. Learn how to work with l
 When working R, you’ll probably deal with Data Frames all the time. Therefore, you need to know how to create
 one, select the most interesting parts of it, and order them.
 
-#### 7. [Graphics]
+#### 7. [Graphics](https://github.com/jinkyukim-me/Intro_R/tree/master/7.Graphics)
 Discover R’s packages to do graphics and create your own data visualizations
 
 #### 8. [Final Exam Score]
