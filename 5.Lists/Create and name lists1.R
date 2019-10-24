@@ -1,5 +1,8 @@
 # Create a list
-# Just a quick refresher: A list in R allows you to gather a variety of objects in an ordered way. These objects can be matrices, vectors, factors, data frames, even other lists, etc. It is not even required that these objects are related to each other. You can construct a list with the list() function:
+# Just a quick refresher: A list in R allows you to gather a variety of objects in an ordered way. 
+# These objects can be matrices, vectors, factors, data frames, even other lists, etc. 
+# It is not even required that these objects are related to each other. 
+# You can construct a list with the list() function:
 #   
 #   my_list <- list(comp1, comp2 ...)
 
